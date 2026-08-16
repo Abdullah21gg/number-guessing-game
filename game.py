@@ -6,7 +6,8 @@ while True:
         guess = int(input("guess a number between 1 and 10: "))
         attempts += 1
         if guess == secret_number:
-            print ("you win")
+            print ("you win", 
+                   "attempts:", attempts)
             break
         elif guess < secret_number:
             print ("too low, try again")
